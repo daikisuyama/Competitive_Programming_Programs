@@ -1,0 +1,67 @@
+//デバッグ用オプション：-fsanitize=undefined,address
+
+//コンパイラ最適化
+#pragma GCC optimize("Ofast")
+
+//インクルードなど
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+//マクロ
+//forループ
+//引数は、(ループ内変数,動く範囲)か(ループ内変数,始めの数,終わりの数)、のどちらか
+//Dがついてないものはループ変数は1ずつインクリメントされ、Dがついてるものはループ変数は1ずつデクリメントされる
+//FORAは範囲for文(使いにくかったら消す)
+#define REP(i,n) for(ll i=0;i<ll(n);i++)
+#define REPD(i,n) for(ll i=n-1;i>=0;i--)
+#define FOR(i,a,b) for(ll i=a;i<=ll(b);i++)
+#define FORD(i,a,b) for(ll i=a;i>=ll(b);i--)
+#define FORA(i,I) for(const auto& i:I)
+//xにはvectorなどのコンテナ
+#define ALL(x) x.begin(),x.end() 
+#define SIZE(x) ll(x.size()) 
+//定数
+#define INF 1000000000000 //10^12:∞
+#define MOD 1000000007 //10^9+7:合同式の法
+#define MAXR 100000 //10^5:配列の最大のrange
+//略記
+#define PB push_back //挿入
+#define MP make_pair //pairのコンストラクタ
+#define F first //pairの一つ目の要素
+#define S second //pairの二つ目の要素
+
+signed main(){
+    //入力の高速化用のコード
+    //ios::sync_with_stdio(false);
+    //cin.tie(nullptr);
+    ll n;cin>>n;
+    map<ll,ll> b;
+    REP(i,n){
+        ll z;cin>>z;
+        b[z-1]++;
+    }
+    vector<ll> a;
+    FORA(i,b){
+        if(i.S!=0)a.PB(i.S);
+    }
+    sort(ALL(a));
+    //REP(i,SIZE(a))cout<<a[i]<<endl;
+    ll ans=0;
+    FOR(x,1,200000LL){
+        //nxt以降から探す
+        ll ans_sub=0;
+        ll y=x;
+        auto nxt=a.begin();
+        while(true){
+            if(nxt==a.end())break;
+            nxt=lower_bound(nxt,a.end(),y);
+            if(nxt==a.end())break;
+            nxt++;
+            ans_sub++;
+            y*=2;
+        }
+        ans=max(ans,x*(1LL<<ans_sub)-x);
+    }
+    cout<<ans<<endl;
+}

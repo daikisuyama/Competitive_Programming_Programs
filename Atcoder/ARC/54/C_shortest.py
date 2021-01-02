@@ -1,0 +1,1 @@
+from math import *;p=float(input());a=3/log(4);print(p if p<a else a+a*log(p/a))

@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "random": "cpp",
+        "unordered_set": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "optional": "cpp",
+        "bitset": "cpp",
+        "set": "cpp"
+    }
+}

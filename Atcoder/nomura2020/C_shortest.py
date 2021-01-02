@@ -1,0 +1,1 @@
+p=print;n,*a=map(int,open(0).read().split());t=sum(a);p(sum([w:=1]+[exit(p(-1))if(w:=min(2*(w-q),t:=t-q))<0 else w for q in a]))

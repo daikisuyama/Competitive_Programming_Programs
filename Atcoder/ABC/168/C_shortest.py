@@ -1,0 +1,1 @@
+from math import*;a,b,h,m=map(int,input().split());print((a*a+b*b-2*a*b*cos((m*11/360-h/6)*pi))**.5)

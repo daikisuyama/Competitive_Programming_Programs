@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "tuple": "cpp",
+        "cmath": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp"
+    }
+}

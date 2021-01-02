@@ -1,0 +1,6 @@
+Collecting ruamel_yaml
+  Downloading ruamel.yaml-0.16.10-py2.py3-none-any.whl (111 kB)
+Collecting ruamel.yaml.clib>=0.1.2; platform_python_implementation == "CPython" and python_version < "3.9"
+  Downloading ruamel.yaml.clib-0.2.0-cp36-cp36m-macosx_10_9_x86_64.whl (147 kB)
+Installing collected packages: ruamel.yaml.clib, ruamel-yaml
+Successfully installed ruamel-yaml ruamel.yaml.clib-0.2.0

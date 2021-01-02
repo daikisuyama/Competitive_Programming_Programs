@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "unordered_set": "cpp",
+        "set": "cpp",
+        "tuple": "cpp"
+    }
+}

@@ -1,0 +1,1 @@
+include Math;a,b,h,m=gets.split.map &:to_f;p (a*a+b*b-2*a*b*cos((h/6-m*11/360)*PI))**0.5

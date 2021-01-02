@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "random": "cpp"
+    },
+    "python.pythonPath": "/Users/suyamadaiki/.pyenv/versions/anaconda3-4.3.1/bin/python"
+}

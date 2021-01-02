@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+l1=len(a)
+l2=len(set(a))
+print("YES" if l1==l2 else "NO")
