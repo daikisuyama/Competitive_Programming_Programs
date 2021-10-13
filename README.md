@@ -1,4 +1,4 @@
-# Old_Competitive_Programming
+# Old_Competitive_Programming_Programs
 
 ## 目的
 
