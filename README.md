@@ -1,4 +1,4 @@
-# Old_Competitive_Programming_Programs
+# Competitive_Programming_Programs
 
 2019/8~2021/1で競技プログラミングの際に作成したコードを管理するリポジトリ。
 
